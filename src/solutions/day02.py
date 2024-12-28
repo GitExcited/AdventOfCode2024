@@ -40,30 +40,34 @@ def is_safe_desc(pair):
     if pair[0] > pair[1] >= pair[0] -3:
         return True
     return False
-def is_damp_safe(n):
-    #TODO: determine if list should be ascending or descending
-    if n[0] > n[1] or n[1] > n[2]:
-        func = is_safe_asc
-    else:
-        func = is_safe_desc
+def is_damp_safe(n,func):
     for i in range(0, len(n) - 1):
+        #func lets us check ascending or descending as a parameter
         if not func( n[i:i + 2] ):
-            # failure found. edge case one is failure at first two elements
-            if i == 0:
-                # case 1: does removing element 0 make it safe?
-                if is_safe( n[1:] ):
-                    pass
+            # failure found. check if removing i or i+1 makes it safe
+            # remove i element
+            temp1= n[:i] + n[i+1:]
+            # remove i+1 element
+            if i==len(n)-2:
+                temp2= n[:i+1] # edge case: we are at the before last element
+            else:
+                temp2= n[:i+1] +n[i+2:]
+            if is_safe(temp1) or is_safe(temp2):
+                return True
+            return False
+    return True
 
-            # case 2: does removing element 1 make it safe?
+
 #open file and determine if line is asc or desc
 with open('../inputs/day02.txt') as f:
     count=0
     for l in f:
         line= l.strip().split(' ')
         numbers = [int(x) for x in line]
-        if is_damp_safe(numbers):
+        #Check if numbers are safe in descending or ascending order
+        if is_damp_safe(numbers,is_safe_asc) or is_damp_safe(numbers,is_safe_desc):
             count+=1
+    print('damp safe = '+str(count))
 
 
-#check pair by pair until failure. at failure create two possible scenarios.
-# if either succeeds AND the remaining succeds then accept. otherwise reject
+
