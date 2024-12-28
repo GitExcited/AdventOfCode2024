@@ -10,7 +10,7 @@ Here's my progress through the challenges. Each day will update as I complete th
 |---|---|---|---------------|----------------|---|---------------------------------|          
 | 1 | 🌟 |🌟  | 15m           | 30m            | Python | [Day 1](src/solutions/day01.py) |
 | 2 | 🌟 |🌟  | 20m           | 45m            | Python | [Day 2](src/solutions/day02.py) |
-| 3 | 🌟 |🌟  | 14m           | 15m            | - | [Day 3](src/solutions/day03.py) |
+| 3 | 🌟 |🌟  | 14m           | 15m            | Python | [Day 3](src/solutions/day03.py) |
 | 4 |  |  | -             | -              | - | [Day 4](day04/)                 |
 | 5 |  |  | -             | -              | - | [Day 5](day05/)                 |
 | 6 |  |  | -             | -              | - | [Day 6](day06/)                 |
@@ -34,7 +34,7 @@ Here's my progress through the challenges. Each day will update as I complete th
 | 24 |  |  | -             | -              | - | [Day 24](day24/)                |
 | 25 |  |  | -             | -              | - | [Day 25](day25/)                |
 
-**Total Stars:** ⭐ 4 / 50
+**Total Stars:** ⭐ 6 / 50
 
 ## 📈 Stats & Insights 📈
 
