@@ -48,7 +48,7 @@ Here's my progress through the challenges. Each day will update as I complete th
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository_url>
+    git clone [<repository_url>](https://github.com/GitExcited/AdventOfCode2024.git)
     ```
 2.  **Navigate to the day's directory:**
     ```bash
