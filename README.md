@@ -34,7 +34,7 @@ Here's my progress through the challenges. Each day will update as I complete th
 | 24 |  |  | - | - | - | [Day 24](day24/) |
 | 25 |  |  | - | - | - | [Day 25](day25/) |
 
-**Total Stars:** ⭐ 0 / 50
+**Total Stars:** ⭐ 4 / 50
 
 ## 📈 Stats & Insights 📈
 
